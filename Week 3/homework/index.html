@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- meta tag controls how the page is displayed on different devices. -->
+    <!-- width=device-width sets the width of the viewport to the width of the device. -->
+    <!-- initial-scale=1.0 sets the initial zoom level to 100%. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the title that appears in the browser tab.-->
+    <title>Chile Studio Home Page</title>
+    <!--This section contains CSS for styling the HTML elements.-->
+    <link rel="stylesheet" href="style.css">
+     <!--Add Calistoga font.-->
+    <link href='https://fonts.googleapis.com/css?family=Calistoga' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Arbutus slab' rel='stylesheet'>
+    <!-- Add Bootstrap CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+     <!-- Add Bootstrap JS (for toggling effect) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arbutus Slab';
+            margin: 0;
+            padding: 0px;
+            background-color:#e0b389;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .logo img {
+            height: 75px;
+            vertical-align: middle; 
+        }
+        .header {
+            padding-bottom: 5px;
+        }
+
+        nav {
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo {
+            font-weight: bold;
+        }
+        .logo-container {
+            position: relative;
+            display: inline-flex;
+        }
+        .logo-container img{
+            position: relative;
+            top: 10px;
+            max-width: 100%;
+            margin-right: -37px;
+            max-height: auto;
+
+        }
+       
+        h1 {
+            text-align: center;
+        }
+
+        .topnav-right {
+            display: flex;
+        }
+
+        .topnav-right a {
+            text-decoration: none;
+            margin-left: 20px;
+            color: #333;
+            line-height: 30px; 
+            position: relative;
+            top: 50px; 
+            padding: 0 0px;
+        }
+
+        .topnav-right a:hover {
+            color: #542d1b; 
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section-->
+    <!-- <nav> is use to navigation bar containing the logo and navigation links. -->
+<div class="header">
+    <nav>
+        <div class="container-fluid">
+            <!-- Brand and toggle button -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="logo">
+                    <div class="logo-container">
+                        <img src="png/Logo Art.png" alt="Chile Studio Logo"> 
+                        <div>
+                            <span class="logo-text">
+                                <a class="navbar-brand" href="index.html" style="text-decoration: none;">
+                                    <!-- <span> tags is used to separate "chile" and "studio"-->
+                                    <!-- <br> tags is used to make sure they appear on different lines-->
+                                    <span class="logo-top" style="color:#7b4325; font-size: 30px; font-family: 'Calistoga', sans-serif;">Chile</span><br>
+                                    <span class="logo-bottom" style="color:#7b4325; font-size: 30px; font-family: 'Calistoga', sans-serif;">Studio</span>
+                                </a>
+    
+                            </span>
+
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collapsible navigation -->
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <div class="topnav-right">
+                    <a href="index.html">Home</a> 
+                    <a href="about.html">About</a> 
+                    <a href="shop.html">Shop</a> 
+                    <a href="services.html">Services</a> 
+                    <a href="contact.html">Contact</a> 
+        
+                    <!-- Cart and Login Icons -->
+                    <a href="cart.html">
+                        <div class="cart-icon-wrapper">
+                            <img src="jpg/trolley-icon-8.jpg" alt="Cart Icon" class="cart-icon">
+                        </div>
+                    </a>
+                    <a href="login.html">
+                        <div class="login-icon-wrapper">
+                            <img src="jpg/login-icon-2.jpg" alt="Login Icon" class="login-icon">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+      
+    </nav>
+</div>
+    <h1>Welcome to My Studio</h1>
+
+    <div class="row">
+        <img src="jpg/Art Studio Banner.jpg" width="100%"> 
+    </div>
+
+ <!-- The <main> tag is an additional HTML tag not discussed in the week 2 course. -->
+ <!-- <main> tag is used to classify the main content of a webpage, which is a block-level element. -->    
+    <main style="background-color:#f2dcc2;">
+        <!-- Main content area -->
+        <div class="main-content">
+            <div class="content">
+                <h2>Main Content</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel ligula eget lorem bibendum facilisis.</p>
+            </div>
+            <!-- Optional Sidebar -->
+            <div class="sidebar">
+                <h2>Sidebar</h2>
+                <p>Additional information or links can go here.</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <img src="png/Venus's Awakening.png" alt="Venus's Awakening" width="50%"> 
+        </div>
+
+        <div>
+            <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+        </div>
+
+     <!-- The <details> and <summary> tag is an additional HTML tag not discussed in the week 2 course. -->
+    <!-- The <summary> tag is used to visible heading that can be clicked to expand information. -->
+    <!-- The <details> tag is used to create collapsible section. -->
+
+        <details>
+            <summary> Describe</summary>
+            <p>
+                When the brilliant dawn appears, all things that were sleeping now awaken as man himself receives the perception of the beauty and color of all things.
+            </p>
+        </details>
+    </main>
+
+<!-- Footer Section -->
+<div class="footer">
+    <p>&copy; CopyRights 2025 by Chile Studio. All rights reserved.</p>
+</div>
+
+
+
+</body>
+</html>
+

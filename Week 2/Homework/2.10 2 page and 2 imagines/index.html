@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- meta tag controls how the page is displayed on different devices. -->
+    <!-- width=device-width sets the width of the viewport to the width of the device. -->
+    <!-- initial-scale=1.0 sets the initial zoom level to 100%. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the title that appears in the browser tab.-->
+    <title>Chile Studio Home Page</title>
+    <!--This section contains CSS for styling the HTML elements.-->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color:#e0b389;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            font-weight: bold;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        .topnav-right {
+            display: flex;
+        }
+
+        .topnav-right a {
+            text-decoration: none;
+            margin-left: 20px;
+            color: #333; 
+        }
+
+        .topnav-right a:hover {
+            color: #542d1b; 
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!-- <nav> is use to navigation bar containing the logo and navigation links. -->
+    <nav>
+        <div class="logo">
+            <a href="#">Chile Nguyen</a>
+        </div>
+        <div class="topnav-right">
+            <a href="index.html">Home</a> 
+            <a href="about.html">About</a> 
+            <a href="shop.html">Shop</a> 
+            <a href="services.html">Services</a> 
+            <a href="contact.html">Contact</a> 
+            <a href="cart.html">Cart</a> 
+        </div>
+    </nav>
+
+    <h1>Welcome to My Studio</h1>
+
+    <div class="row">
+        <img src="jpg/Art Studio Banner.jpg" width="100%"> 
+    </div>
+ <!-- The <main> tag is an additional HTML tag not discussed in the week 2 course. -->
+ <!-- <main> tag is used to classify the main content of a webpage, which is a block-level element. -->    
+    <main style="background-color:#fbe3d6;">
+        <div class="column">
+            <img src="png/Venus's Awakening.png" alt="Venus's Awakening" width="50%"> 
+        </div>
+
+     <!-- The <details> and <summary> tag is an additional HTML tag not discussed in the week 2 course. -->
+    <!-- The <summary> tag is used to visible heading that can be clicked to expand information. -->
+    <!-- The <details> tag is used to create collapsible section. -->
+
+        <details>
+            <summary> Describe</summary>
+            <p>
+                When the brilliant dawn appears, all things that were sleeping now awaken as man himself receives the perception of the beauty and color of all things.
+            </p>
+        </details>
+    </main>
+
+
+
+
+</body>
+</html>
+

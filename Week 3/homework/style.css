@@ -1,0 +1,124 @@
+<!-- Logo Section-->
+.logo {
+	text-align: center; 
+	margin: 5px 0; 
+}
+
+.logo a {
+	text-decoration: none; 
+	display: inline-block; 
+}
+
+.logo-top {
+	display: block; 
+	color: #7b4325;
+	font-size: 30px;
+	font-family: 'Lucida Sans Unicode', sans-serif;
+	font-weight: bold;
+    
+}
+
+.logo-bottom {
+	display: block; 
+	color: #7b4325;
+	font-size: 30px;
+	font-family: 'Lucida Sans Unicode', sans-serif;
+	font-weight: bold;
+    margin-top: -15px;
+}
+.logo-wrapper img{
+    max-height: 50px;
+    margin-right: 10px;
+}
+.logo-text{
+    font-size: 1.5px;
+    font-weight: bold;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Header Section */
+.header {
+    background-color: #bd9066;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+    
+}
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    
+}
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+.cart-icon-wrapper {
+    display: inline-block; 
+    position: relative;
+   
+}
+.cart-icon {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: -20px;
+    
+   
+}
+
+.login-icon-wrapper {
+    display: inline-block; 
+    position: relative;
+   
+}
+.login-icon {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    top: -20px;
+   
+}
+
+
+/* Main Content Area */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+.content {
+    flex: 2;
+    background-color: #ddd;
+    padding: 15px;
+    margin: 10px;
+}
+.sidebar {
+    flex: 1;
+    background-color: #ccc;
+    padding: 15px;
+    margin: 10px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}

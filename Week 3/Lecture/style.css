@@ -1,0 +1,22 @@
+h1 {
+
+    color:hsl(319, 73%, 47%);
+    background-color: aquamarine;
+
+}
+.column{
+    width:200px;
+    height:200px;
+    float:left;
+    margin: 40px;
+    padding: 20px;
+    background-color: gainsboro;
+}
+
+h2{
+    color: blue;
+}
+
+h3{
+    color: yellow;
+}
