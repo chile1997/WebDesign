@@ -1,0 +1,126 @@
+/*Header Styling */
+.header {
+    /* Sets header background color */
+    background-color: #bd9066;
+    /* Sets padding top and bottom*/
+    padding: 10px 0;
+    align-items: center;
+    
+}
+
+/*Navbar Styling */
+.navbar {
+    /* Remove default margin */
+    margin-bottom: 0; 
+    /* Enables flex box layout*/
+    display: flex;
+    /*Aligns items to center*/
+    align-items: center;
+    /*Distributes space between logo and navigation */
+    justify-content: space-between;
+    /*Sets padding left and right*/
+    padding: 10px 20px;
+    
+}
+.navbar .container-fluid{
+    /* Enables flex box layout*/
+    display: flex;
+    /*Vertically aligns header content*/
+    align-items: center;
+    /* Distributes space between logo and navigation */
+    justify-content: space-between; 
+}
+
+/*Navbar header styling */
+.navbar-header {
+    display: flex;
+    /* Vertically centers content in navbar-header */
+    align-items: center;
+    min-height: 0px;
+}
+
+
+/*Logo Container styling*/
+.logo-container {
+    /* Enables flexbox layout for logo and text */
+    display: flex;
+    /* Vertically aligns items within the logo container*/
+    align-items: center;
+}
+
+/*Style for the logo image */
+.logo-container img{
+    max-height: 70px;
+    /*Removes margin to close the logo and logo text */
+    margin-right: -35px;
+}
+
+/*Style for the logo text*/
+.logo-text a{
+    text-decoration: none;
+}
+
+/* Style for the "Chile" word */
+.logo-top {
+    /* block level element*/
+    display: block;
+    /* Sets font color */
+    color: #7b4325;
+    /*Sets font size*/
+    font-size: 30px;
+    /*Sets font style*/
+    font-family: 'Calistoga', sans-serif;
+    /*Align the text to left side */
+    font-weight: bold;
+}
+
+/* Style for the "Studio" word */
+.logo-bottom {
+    /* block level element*/
+    display: block;
+    /*Sets font color*/
+    color: #7b4325;
+    /* Sets font size*/
+    font-size: 30px;
+     /*Sets font style*/
+    font-family: 'Calistoga', sans-serif;
+    /*Align the text to left side */
+    text-align: left;
+    font-weight: bold;
+    margin-top: -15px;
+}
+.topnav-right {
+    /* Enables flexbox layout for navigation */
+    display: flex;
+    /* Vertically center nav items */
+    align-items: center; 
+    margin-top: 1.5em;
+    /*This line pushes elements to the right*/
+    margin-left: auto;  
+
+}
+
+/*Style for navigation links */
+.topnav-right a {
+    margin-left: 2em;
+    /*sets the font size*/
+    font-size: 1.1em;
+    position: relative;
+    line-height: normal;
+}
+
+/* Style for the cart icon */
+.cart-icon-wrapper, .login-icon-wrapper {
+    display: inline-block;
+    margin-left: 0.8em;
+}
+
+/* Style for the cart icon and login icon*/
+.cart-icon, .login-icon {
+    /*Sets icon height*/
+    height: 1.5em;
+    /*Sets icon width*/
+    width: 1.5em;
+    position: relative;
+    top: -0.4em;
+}

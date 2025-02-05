@@ -1,0 +1,209 @@
+/* Main content styling*/
+
+main-content {
+    /*Sets padding top and bottom*/
+    padding: 20px 0;
+    /*Sets background color*/
+    background-color: #f2dcc2;
+}
+/* Banner styling*/
+.banner {
+    /*Centers the banner*/
+    text-align: center;
+}
+.banner-image{
+    /* Sets the image width*/
+    width: 100%;
+}
+.main-section{
+    /*Centers the element horizontally*/
+    display: flex;
+    justify-content: center;
+    /*Align items at start*/
+    align-items: flex-start;
+    /*Sets padding*/
+    padding: 20px;
+    /*Sets the maximum width*/
+    max-width: 1200px;
+    /*Sets horizontal margin to auto*/
+    margin: 0 auto;
+    /* spacing between content and sidebar */
+    gap: 20px; 
+}
+.main-container{
+    display:flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-section h1{
+     margin-bottom: 1em;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.content {
+    /*Sets flexible size*/
+    flex: 2;
+    background-color: #ddd;
+     /*Sets padding*/
+    padding: 1.5em;
+}
+.sidebar {
+     /*Sets flexible size*/
+    flex: 1;
+    background-color: #ccc;
+    /*Sets padding*/
+    padding: 1.5em;
+}
+.featured-art{
+    /*Centers the element horizontally*/
+    display: flex;
+    /*Aligns items vertically to center*/
+    align-items: center;
+    /*Sets horizontal margin to auto*/
+    margin: 2em auto;
+    gap: 2em;
+}
+.featured-image{
+  width: 50%;
+}
+.description{
+    /*Sets horizontal margin to auto*/
+    margin: 2em auto;
+    /*Centers the text*/
+    text-align: center;
+    /*Sets the padding*/
+    padding: 20px;
+}
+.description summary {
+     /*Sets the font size */
+    font-size: 1.2em;
+     /*Sets the cursor to pointer*/
+    cursor: pointer;
+}
+.description p {
+    /*Sets margin top*/
+    margin-top: 10px;
+    /*Aligns text to left */
+    text-align: left;
+}
+
+/*Featured products section styling*/
+.featured-products{
+    /*Enables flexbox layout*/
+    display: flex;
+    /*Centers the element horizontally*/
+    justify-content: center;
+    /*Sets margin top and bottom and centers element horizontally*/
+    margin: 2em auto;
+    * Sets the gap between elements*/
+    gap: 2em;
+}
+
+/*Style for new products section*/
+.new-product {
+    /*Sets the flexible size of the element*/
+    flex: 1;
+    /* Centers the text */
+    text-align: center;
+    /*sets the padding*/
+    padding: 1.5em;
+}
+
+/*Style for new journal section*/
+.new-journal{
+    /*Sets the flexible size of the element*/
+    flex: 1;
+    /* Centers the text */
+    text-align: center;
+    /*sets the padding*/
+    padding: 1.5em;
+}
+
+/*Style for heading inside the new product and journal section*/
+.new-product h3,
+.new-journal h3 {
+    /*Sets font size*/
+     font-size: 1.5em;
+     /*Sets margin bottom*/
+    margin-bottom: 0.8em;
+}
+
+/* Style for images inside new product and new journal*/
+.new-product .product-image,
+.new-journal .journal-image {
+    /*Sets max width for the images*/
+    max-width: 100%;
+    /*Sets height to auto*/
+    height: auto;
+    /*Sets margin top and bottom*/
+    margin: 0.8em 0;
+}
+
+/*Style for paragraph inside the new product and journal section*/
+.new-product p,
+.new-journal p {
+    /* Sets the font size */
+    font-size: 1em;
+    /*Sets margin bottom */
+    margin-bottom: 0.8em;
+    /* Sets the line height */
+    line-height: 1.5;
+}
+
+/*Community section styling*/
+.community {
+    /*Centers the text */
+    text-align: center;
+    /*Sets the margin top and bottom */
+    margin: 2em auto;
+    /*Sets max width */
+    max-width: 800px;
+    /*Sets the padding */
+    padding: 1.5em;
+}
+
+/*Style for community section heading*/
+.community h3 {
+    /*Sets font size*/
+    font-size: 1.8em;
+    /* Sets margin bottom */
+    margin-bottom: 0.8em;
+}
+
+/*Style for paragraph inside the community section*/
+.community p {
+    /*Sets font size*/
+    font-size: 1.1em;
+    /*Sets line height */
+    line-height: 1.6;
+    /*Sets margin bottom */
+    margin-bottom: 1.5em;
+}
+
+/*Style for the login section */
+.login-section {
+    /*Sets margin top */
+    margin-top: 20px;
+}
+
+/*Style for input inside the login section */
+.login-input {
+    /*Sets margin */
+    margin: 0.5em;
+    /*Sets padding */
+    padding: 0.8em;
+    /*Sets border */
+    border: 1px solid #ccc;
+    /*Sets border radius */
+    border-radius: 4px;
+}
+
+/* Style for the horizontal line */
+.horizontal-line {
+    border-bottom: 1px solid #ccc;
+    margin: 2em 20px;
+}

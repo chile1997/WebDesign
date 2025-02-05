@@ -1,0 +1,64 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+/* Sets the overall font, background, and text color */
+body {
+    /* uses Arbutus Slab font*/
+    font-family: 'Arbutus Slab', serif;
+    background-color: #e0b389;
+    /* Adjust text color as needed */
+    color: #333; 
+}
+
+/* Links */
+/* Sets link color, removes underline, and sets hover color */
+a {
+    /*Removes underline from text*/
+    text-decoration: none;
+    /* Adjust link color as needed */
+    color: #333; 
+}
+a:hover {
+    /* Adjust hover color as needed */
+    color: #542d1b; 
+}
+/* Container for consistent padding on the left and right */
+/* Keeps content centered */
+
+.container {
+    width: 90%;
+    /*automatically sets the left and right margin*/
+    margin-left: auto;
+    margin-right: auto;
+    /* Set a maximum width */
+    max-width: 1200px; 
+}
+
+/* Responsive image styling */
+img {
+    max-width: 100%;
+    height: auto;
+    /* Removes extra space below image */
+    display: block; 
+}
+
+/* Button style */
+button {
+    padding: 10px 15px;
+    background-color: #7b4325;
+    color: white;
+    border: none;
+    /*Changes the cursor to pointer*/
+    cursor: pointer; 
+    /*Rounds the corner of the button*/
+    border-radius: 5px; 
+    font-size: 1.1em;
+}
+
+button:hover{
+    /*Changes the background color when mouse hover the button*/
+    background-color: #542d1b; 
+}
