@@ -1,0 +1,569 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arbutus Slab", serif;
+}
+
+.container {
+    background: linear-gradient(rgba(231, 188, 160, 0.35),rgba(123, 46, 2, 0.6));
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem 0 3rem;
+    justify-content: space-between;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding-inline: 1rem;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.left-nav {
+    display: flex;
+}
+
+.mid-nav a {
+    font-size: 1.25rem;
+}
+
+.right-nav img {
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mid-info {
+    color: white;
+    padding: 10rem 5rem 0 5rem;
+}
+
+.name {
+    font-size: 5rem;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.name span {
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.work {
+    letter-spacing: 2.5px;
+}
+
+.sec-des {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f9fafb;
+    color: #542d1b;
+    display: flex;
+    align-items: center;
+    padding: 9rem 7.5rem;
+    justify-content: space-between;
+}
+
+.sec-des-left {
+    width: 50ch;
+}
+
+.sec-des p {
+    line-height: 2;
+}
+
+.sec-des-left h3{
+    font-size: 3rem;
+    color: #542d1b;
+}
+
+.sec-des img {
+    width: 30vw;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.art {
+    padding: 10.1rem 7.5rem;
+    background: #0c0909;
+    color: rgb(235, 235 , 235);
+}
+
+.art h3 {
+    background: #0c0909;
+    color: #f24f04;
+}
+
+.art img {
+    border-radius: 10px;
+    width: 30vw;
+    
+}
+
+.art-left {
+    order: 2;
+}
+
+
+.description {
+    color: white;
+        
+}
+h2 {
+    font-size: 10rem;
+}
+
+.help {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.contact-text1 {
+    line-height: 2;
+    margin-bottom: 0.5rem;
+}
+
+
+
+hr {
+    width: 95vw;
+    margin: 0 auto;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    color: #542d1b;
+}
+
+footer a {
+    text-decoration: none;
+    padding-inline: 1.25rem;
+    color: #542d1b;
+}
+
+footer p {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* ====================PROFILE============== */
+/* Global Styles */
+
+body {
+    
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+
+
+/* ====================SHOP SECTION ============== */
+
+.shop-section {
+    padding: 40px 10%;
+}
+
+/* Shop Title */
+.shop-title {
+    font-size: 36px;
+    margin-bottom: 45px;
+}
+
+/* Shop Grid Layout */
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px; /* Space between items */
+    justify-content: center;
+    align-items: start;
+}
+
+/* Individual Shop Items */
+.shop-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image Wrapper (Ensures Same Size for All) */
+.image-wrapper {
+    width: 100%; /* Makes images scale equally */
+    max-width: 350px; /* Control max width */
+    height: 235px; /* Fixed height for consistency */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; /* Optional: rounded corners */
+    overflow: hidden; /* Ensures images stay within bounds */
+}
+
+/* Image Styling */
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures all images keep proportion */
+    border-radius: 15px;
+}
+
+/* Image Styling */
+.shop-item img {
+    width: 100%;
+    max-width: 400px; /* Controls max size */
+    border-radius: 10px; /* Rounded corners */
+    object-fit: cover; /* Ensures proper scaling */
+}
+
+/* Text Below Images */
+.shop-item h2 {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+
+/* ==========================SERVICES SECTION =====================*/
+
+/* Section Container */
+.service-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Section Title */
+.service-title {
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+/* Two-Column Grid */
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 40px; /* Space between items */
+    align-items: start;
+}
+
+/* Patreon Items */
+.patreon-item {
+    text-align: center;
+}
+
+/* Image Styling */
+.patreon-item img {
+    width: 100%;
+    max-width: 500px; /* Controls max width */
+    height: 430px;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Adds space below the image */
+}
+
+/* Title */
+.patreon-item h2 {
+    font-size: 22px;
+    margin: 15px 0 10px;
+    margin-bottom: 35px;
+}
+
+/* Description */
+.patreon-item p {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;/* Removes underline */
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    background: #7b4325;
+}
+
+
+/* Ensure NO UNDERLINE on focus, active, and tap states */
+.cta-button:focus,
+.cta-button:active,
+.cta-button:visited,
+.cta-button:focus-visible {
+    text-decoration: none !important;
+    outline: none;
+    box-shadow: none;
+    border: 2px solid black; /* Keeps border visible */
+    background-color: #5a3f30; /* Darker shade on touch */
+    color: white;
+    -webkit-tap-highlight-color: transparent; /* Removes tap highlight on mobile */
+}
+
+
+.cta-button:hover {
+    background: #542d1b;
+    color: white;
+
+}
+
+
+
+
+
+
+
+
+/* ======================  For Large Screens (Desktop)  ======================== */
+@media screen and (min-width: 1118px) {
+      /* Second layout about Artist */
+      .art h3 {
+        text-align:right;
+        font-size: 50px;
+        padding-top: 10px; /* Pushes text downward */
+    }
+
+   /* Profile Image */
+   /* Image Styling (Left Side) */
+   .profile-image {
+    flex: 1; /* Takes 50% of space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+
+.profile-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;/* Makes the image circular */
+    object-fit:cover;
+    margin-bottom: 15px;
+    background: linear-gradient(315deg, #343335,#3e3d3f);
+    box-shadow: -28px -28px 56px, #2f2e30
+   28px 28px 56px #454446;
+}
+
+/* Fix for Side-by-Side Layout */
+.art-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Keeps it centered */
+    max-width: 1200px; /* Prevents it from being too wide */
+    gap: 40px; /* Space between image and text */
+
+}
+
+.sec-des art {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%; /* Keeps it centered */
+    max-width: 1200px; /* Prevents it from being too wide */
+    gap: 40px; /* Space between image and text */
+
+}
+
+.sec-des-left{
+    background: transparent;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: left;
+    margin-bottom: 20px; /* Creates space between text and image */
+    margin-left:100px;
+    margin-right:100px;
+    max-width: none;
+    width: 100%;
+}
+
+/* Description Text Box (Right Side) */
+
+    .description art{
+        flex: 1; /* Takes 50% of space */
+        text-align: left;
+        padding: 20px;
+        
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+
+    /* Social Artist Information */
+    .social-artist {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centers icons */
+        gap: 20px; /* Space between icons */
+        margin-top: 20px;
+    }
+     /* Icon Styling */
+    .social-artist i{
+        color: white;
+        flex-direction: column; /* Stack icons vertically */
+        transition: color 0.3s ease;
+        text-decoration: none; /* Remove underline */
+    }
+
+    .social-artist i:hover{
+        color:#542d1b
+
+    }
+    
+
+}
+
+
+
+/*=================== For Smaller Screens (Mobile)  =================*/
+@media screen and (max-width: 1117px) {
+    /* first layout about*/
+    body {
+        background-color: #e0b389;
+        color: #000; /* Black text */
+        font-family: "Times New Roman", serif; /* Classic look */
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sec-des {
+        max-width: 100%; 
+        width:100%;
+        display: block; /* Ensure block layout (No side-by-side!) */
+        margin-top: 50px;
+    }
+    
+    .sec-des-left{
+        background: transparent;
+        padding: 5px;
+        border-radius: 8px;
+        text-align: left;
+        margin-bottom: 20px; /* Creates space between text and image */
+        max-width: none;
+        width: 100%;
+
+
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 1.8;
+        text-align: justify;
+    }
+    
+    .image-container {
+        width: 100%;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 5px; /* Optional: adds smooth corners */
+    }
+
+
+
+        /* Second layout about Artist */
+        h3 {
+            text-align: center;
+        }
+
+     /* Profile Image */
+
+     .profile-image{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px; /* Spacing below the image */
+    }
+
+    .profile-image img {
+        width: 150px; /* Makes the image circular */
+        height: 150px;
+        border-radius: 50%; /* Makes the image circular */
+        object-fit:cover;
+        border:none;
+        margin-bottom: 15px;
+        background: linear-gradient(315deg, #343335,#3e3d3f);
+        box-shadow: -28px -28px 56px, #2f2e30
+       28px 28px 56px #454446;
+    }
+    .profile-container{
+        max-width: 700px; /* Adjust based on content */
+        padding: 40px 20px;
+        text-align: left;
+    }
+
+      /* Social Artist Information */
+      .social-artist {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Space between icons */
+        margin-top: 20px;
+    }
+     /* Icon Styling */
+    .social-artist i{
+        color: white;
+        transition: color 0.3s ease;
+        text-decoration: none; /* Remove underline */
+    }
+
+    .social-artist i:hover{
+        color:#542d1b
+
+    }
+
+    .shop-grid {
+        grid-template-columns: 1fr; /* Stacks items in a single column on smaller screens */
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr; /* Stacks items vertically on smaller screens */
+    }
+    
+    
+}
+  

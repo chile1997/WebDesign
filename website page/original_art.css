@@ -1,0 +1,124 @@
+/*========================Invest Section =====================*/
+html {
+    scroll-behavior: smooth;
+}
+.invest-section {
+    background-color: #c9b090; /* Light gray background */
+    padding: 80px 15%;
+    text-align: center;
+    color: rgb(76, 40, 12);
+}
+
+.invest-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.invest-section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+}
+
+/*====================== Shop original Section =================*/
+.original-section {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 20px;
+}
+
+.original-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* Container to Hold Products */
+.original-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px; /* Ensures spacing under navbar */
+}
+
+/* Each Shop Item */
+.original-item {
+    text-align: center;
+   
+}
+
+/* Product Image Container */
+.original-image {
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+/* Product Image */
+.original-image img {
+    width: 100%;
+    display:inline-block;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Quick View Overlay */
+.quick-view {
+    position: relative;
+    margin-top: -35px;
+    bottom: 0;
+    left: 0;
+    width: 257px;
+    padding: 10px 5px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    color: #542d1b;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(10px);
+
+}
+
+/* Hover Effect */
+.original-image:hover .quick-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.original-image:hover img {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Product Images */
+.original-item img {
+    width: 250px;
+    height: 350px;
+    border-radius: 5px; /* Rounded corners if needed */
+}
+
+/* Product Titles */
+.original-item h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+/* Product Prices */
+.original-item p {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #93867f;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.original-section2 {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: -95px; 
+}

@@ -1,0 +1,523 @@
+/* Main content styling*/
+
+main-content {
+    /*Sets padding top and bottom*/
+    padding: 20px 0;
+    /*Sets background color*/
+    background-color: #f2dcc2;
+}
+/* Banner styling*/
+.banner {
+    /*Centers the banner*/
+    text-align: center;
+}
+.banner-image{
+    /* Sets the image width*/
+    width: 100%;
+}
+.main-section{
+    /*Centers the element horizontally*/
+    display: flex;
+    justify-content: center;
+    /*Align items at start*/
+    align-items: flex-start;
+    /*Sets padding*/
+    padding: 20px;
+    /*Sets the maximum width*/
+    max-width: 1200px;
+    /*Sets horizontal margin to auto*/
+    margin: 0 auto;
+    /* spacing between content and sidebar */
+    gap: 20px; 
+}
+.main-container{
+    display:flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-section h1{
+     margin-bottom: 1em;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.content {
+    /*Sets flexible size*/
+    flex: 2;
+    background-color: #ddd;
+     /*Sets padding*/
+    padding: 1.5em;
+}
+.sidebar {
+     /*Sets flexible size*/
+    flex: 1;
+    background-color: #ccc;
+    /*Sets padding*/
+    padding: 1.5em;
+}
+.featured-art{
+    /*Centers the element horizontally*/
+    display: flex;
+    /*Aligns items vertically to center*/
+    align-items: center;
+    /*Sets horizontal margin to auto*/
+    margin: 2em auto;
+    gap: 2em;
+}
+.featured-image{
+  width: 50%;
+}
+.description{
+    /*Sets horizontal margin to auto*/
+    margin: 2em auto;
+    /*Centers the text*/
+    text-align: center;
+    /*Sets the padding*/
+    padding: 20px;
+}
+.description summary {
+     /*Sets the font size */
+    font-size: 1.2em;
+     /*Sets the cursor to pointer*/
+    cursor: pointer;
+}
+.description p {
+    /*Sets margin top*/
+    margin-top: 10px;
+    /*Aligns text to left */
+    text-align: left;
+}
+
+
+
+
+
+
+/*=================================== About Section======================= */
+
+/* About Section */
+.about-section {
+    background-color: #c9b090; /* Light gray background */
+    padding: 80px 20px; /* Adds space inside */
+    text-align: center; /* Centers content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* About Content */
+.about-content {
+    max-width: 700px; /* Limits width */
+}
+
+/* Paragraph Text */
+.about-content p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 30px; /* Space before the button */
+}
+
+/* About Button */
+.about-button {
+    display: inline-block;
+    padding: 15px 35px;
+    font-size: 16px;
+    color: #fbf2eb;
+    background-color: #7b4325;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.about-button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+/*=============================Style for new journal section========================================*/
+/*Featured products section styling*/
+/* Make New Product & New Journal Appear Side by Side */
+.featured-products {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    align-items: flex-start;
+    gap: 5px; /* Space between sections */
+    background-color: transparent; 
+    padding: 20px;
+    border-radius: 10px;
+    color: #7b4325;
+    max-width: 900px; /* Adjust width */
+    margin: auto;
+}
+
+/* Make Each Section Take Equal Space */
+.new-product, .new-commission-journal {
+    flex: 1; /* Equal width for both sections */
+    max-width: 50%; /* Prevents overlap */
+}
+
+/* Product & Journal Container (Aligns Image + Text Side by Side) */
+.product-container, .commission-journal-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 100%;
+}
+
+/* Image Styling */
+.product-image {
+    width: 120px; /* Adjust image size */
+    height: auto;
+    border-radius: 5px;
+}
+
+.journal-commission-image {
+    width: 250px; /* Adjust image size */
+    height: 270px;
+    border-radius: 5px;
+
+}
+
+/* Text Styling */
+.product-text, .commission-journal-text {
+    flex: 1;
+    text-align: left;
+    font-size: 0.9em;
+    color: #7b4325;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color:#7b4325;
+}
+
+
+/* Button Styling */
+.product-button, .commission-journal-button {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #7b4325;
+    border-radius: 5px;
+}
+
+.product-button:hover, .commission-journal-button:hover {
+    text-decoration: underline;
+    background-color: #8b4513;
+}
+
+
+
+
+
+
+
+
+
+/* =======SLIDER BAR======== */
+/* Fixed sidebar on the left */
+.sidebar {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100vh;
+    background-color: #222;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sidebar title */
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Product image */
+.product img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Product name */
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Product price */
+.product-price {
+    font-size: 14px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+/* View details button */
+.buy-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buy-button:hover {
+    background-color: #cc5500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Center the product showcase in the middle of the screen */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    background-color: #f5f5f5;
+}
+
+/* Product box */
+.product-box {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Product image */
+.product-box img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Product title */
+.product-box h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Product name */
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Product price */
+.product-price {
+    font-size: 16px;
+    color: #ff6600;
+    margin-bottom: 15px;
+}
+
+/* View details button */
+.buy-button {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*=================================== Journal Section======================= */
+.journal-section {
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+    background: url("png/hand-drawing-post.png") no-repeat center center/cover;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    padding-left: 0; /* Remove left padding for proper centering */
+}
+
+/* Title */
+.journal-title {
+    font-size: 26px;
+    font-weight: normal;
+    color: white;
+    margin-top: 20px;
+
+}
+
+/* Black Floating Content Box */
+.journal-box {
+    background: black;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin-top: 75px; /* Ensures it stays below the title */
+
+}
+
+/* Journal Entry */
+.journal-entry {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+    
+}
+
+/* Journal Entry Image */
+.journal-entry img {
+    width: 95px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 2px;
+    margin-top: 6px; /* Moves image slightly lower */
+}
+
+/* Journal Text */
+.journal-text h2 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.journal-text p {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 5px 0;
+}
+
+/* Read More Link */
+.read-more {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/*============================ Community Section Styling=========================*/
+.community {
+    /*Centers the text */
+    text-align: center;
+    /*Sets the margin top and bottom */
+    margin: 2em auto;
+    /*Sets max width */
+    max-width: 800px;
+    /*Sets the padding */
+    padding: 1.5em;
+}
+
+/*Style for community section heading*/
+.community h3 {
+    /*Sets font size*/
+    font-size: 1.8em;
+    /* Sets margin bottom */
+    margin-bottom: 0.8em;
+}
+
+/*Style for paragraph inside the community section*/
+.community p {
+    /*Sets font size*/
+    font-size: 1.1em;
+    /*Sets line height */
+    line-height: 1.6;
+    /*Sets margin bottom */
+    margin-bottom: 1.5em;
+}
+
+/*Style for the login section */
+.login-section {
+    /*Sets margin top */
+    margin-top: 20px;
+}
+
+/*Style for input inside the login section */
+.login-input {
+    /*Sets margin */
+    margin: 0.5em;
+    /*Sets padding */
+    padding: 0.8em;
+    /*Sets border */
+    border: 1px solid #ccc;
+    /*Sets border radius */
+    border-radius: 4px;
+}
+
+/* Style for the horizontal line */
+.horizontal-line {
+    border-bottom: 1px solid #ccc;
+    margin: 2em 20px;
+}
+
+/* Button style */
+button {
+    padding: 10px 15px;
+    background-color: #7b4325;
+    color: rgb(251, 242, 235);
+    border: none;
+    /*Changes the cursor to pointer*/
+    cursor: pointer; 
+    /*Rounds the corner of the button*/
+    border-radius: 5px; 
+    font-size: 1.1em;
+}
+
+button:hover{
+    /*Changes the background color when mouse hover the button*/
+    background-color: #542d1b; 
+}

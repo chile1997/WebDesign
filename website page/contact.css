@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arbutus Slab", serif;
+    background: linear-gradient(rgba(231, 188, 160, 0.35),rgba(123, 46, 2, 0.6)),url(bg.jpg);
+
+}
+
+h1 {
+    color:#542d1b;
+}
+
+
+.contact-container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    gap:20px;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color:pink;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border:none;
+    width:120px;
+    height: 5px;
+    background-color: pink;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-inputs{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #333;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-inputs:forcus{
+    border: 2px solid #ff994f;
+}
+.contact-inputs::placeholder{
+    color: #a9a9a9;
+}
+.contact-left button{
+    display:flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 19px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.contact-left button img{
+    height:15px;
+}
+
+
+/* Contact Info Box - Right Side */
+.contact-info h2{
+    margin: 10px 60px;
+    margin-bottom: 12px;
+
+}
+.contact-info {
+    flex: 0.7;
+    padding: 20px;
+    background-color:transparent;
+    border-left: 3px solid #5a3b1e;
+    border-radius: 0px;
+    text-align: left;
+    color: #5a3b1e;
+}
+
+.contact-info p {
+    margin: 10px 60px;
+    font-size: 14px;
+}
+
+.contact-info a {
+    color: #5a3b1e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+/*=================== For Smaller Screens (Mobile)  =================*/
+@media screen and (max-width: 1117px) {
+    .contact-inputs{
+        width:80vw;
+    }
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-form, .contact-info {
+        width: 100%;
+        padding: 20px 0;
+        margin-top: 2.5rem;
+    }
+    
+    .contact-info {
+        border-left: none;
+        border-top: 3px solid #5a3b1e;
+        text-align: center;
+    }
+
+    .footer {
+        width: 100%;
+        background-color: #5a3b1e; /* Adjust color as needed */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: absolute;
+        bottom: -270px;
+        left: 0;
+    }
+}

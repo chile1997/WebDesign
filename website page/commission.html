@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Discover Fine Art Commissions & Custom Framed Art at Chile Studio. Own a unique piece that brings creativity and elegance to your space!">
+    <title>Chile Studio Commissions Page</title>
+    <!--===============  Favicon link =============== -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!--===============  External Stylesheet =============== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="commission.css">
+    <!--=============== Add Calistoga font ===============-->
+    <link href='https://fonts.googleapis.com/css?family=Calistoga' rel='stylesheet'>
+    <!--=============== Add Arbutus Slab font ===============-->
+    <link href='https://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet'>
+    <!--=============== Add ▼ to navigation bar ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!--=============== Script for Icons ==============-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body ontouchstart="">
+    <!--=============== HEADER  SECTION ===============-->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a href="index.html" class="logo-container">
+                    <img src="png/logo-main.png" alt="Chile Studio Logo">
+                </a>
+
+                <div class="ham-toggle" id="myhamtoggle">
+                    <i class="ri-menu-line ham-burger"></i>
+                    <i class="ri-close-line ham-close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav-menu" id="mynavmenu">
+                <ul class="nav-list">
+                    <li class="dropdown">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+
+                    <!--=============== SHOP DROPDOWN  ===============-->
+                    <li class="dropdown">
+                        <a href="shop.html" class="nav-link" ontouchend="toggleDropdown(this)">
+                            Shop <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="original_art.html" class="dropdown-link">
+                                    <i class="ri-gallery-fill"></i> Original Art
+                                </a>
+                            </li>
+                            <li>
+                                <a href="prints.html" class="dropdown-link">
+                                    <i class="ri-file-copy-line"></i> Prints
+                                </a>
+                            </li>
+                            <li>
+                                <a href="stickers.html" class="dropdown-link">
+                                    <i class="ri-emoji-sticker-line"></i> Stickers
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--=============== SERVICES DROPDOWN  ===============-->
+                    <li class="dropdown">
+                        <a href="services.html" class="nav-link" ontouchend="toggleDropdown(this)">
+                            Services <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="patreon.html" class="dropdown-link">
+                                    <i class="ri-patreon-line"></i> Patreon
+                                </a>
+                            </li>
+
+                            <!--=============== SERVICES DROPDOWN SUBMENU ===============-->
+                            <li class="dropdown-sub">
+                                <a href="commission.html" class="dropdown-link">
+                                    <i class="ri-task-line"></i> Commissions <i
+                                        class="ri-add-line dropdown-add"></i>
+                                </a>
+
+                                <ul class="dropdown-submenu">
+                                    <li>
+                                        <a href="policy.html" class="dropdown-sublink">
+                                            <i class="ri-file-list-line"></i> Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="sample_price.html" class="dropdown-sublink">
+                                            <i class="ri-cash-line"></i> Sample Price
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="progress.html" class="dropdown-sublink">
+                                            <i class="ri-progress-3-line"></i> Progress
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--=============== CONTACT DROPDOWN  ===============-->
+                    <li class="dropdown">
+                        <a href="contact.html" class="nav-link" ontouchend="toggleDropdown(this)">
+                            Contact <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="contact.html" class="dropdown-link">
+                                    <i class="ri-contacts-book-line"></i> Contact Form
+                                </a>
+                            </li>
+                            <li>
+                                <a href="social_media_links.html" class="dropdown-link">
+                                    <i class="ri-links-line"></i> Social Media Links
+                                </a>
+                            </li>
+                            <li>
+                                <a href="messages.html" class="dropdown-link">
+                                    <i class="ri-message-3-line"></i> Messages
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                   
+                </ul>
+                
+                <ul class = "nav-list">
+                         <li class="nav-actions">
+                        <a href="cart.html" class="cart-icon-wrapper">
+                            <ion-icon name="cart-outline" class="icon-cart"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="nav-actions">
+                        <a href="login.html" class="login-icon-wrapper">
+                            <ion-icon name="person-circle-outline" class="login-icon"></ion-icon>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--=============== MAIN JS ===============-->
+    <script src="new.js"></script>
+    <script src="navigation.js"></script>
+    <!--=============== MAIN ===============-->
+    <main class="main-content" style="background-color:#f2dcc2;" >
+        <section>
+            <div class="mid-info">
+   
+                <div class="work">Painter - Printmaker</div>
+            </div>
+        </section>
+
+        <h1>Fine Art Commissions & Custom Framed Art</h1>
+
+
+        <section class="commission-header">
+            <div class="process-container">
+                <h2 class="process-title">Process Behind<br>the Commission</h2>
+                <p class="process-description">
+                    Commissioning a bespoke work of art can seem like a daunting process, but we are here to guide you every step of the way. 
+                    Our collaborative approach ensures that your vision comes to life beautifully.
+                    We have learned that the best results come from creative partnerships where the artist reflects the client’s personality as much as their appearance.
+                </p>
+            </div>
+
+        </section>
+    
+        <!-- ========================Stage One ========================== -->
+        <section class="commission-stage">
+            <div class="stage-image">
+                <img src="png/A-Discussion-Louis-Charles-Moeller-Oil-Painting.png" alt="Artists discussing art commission">
+                <p> "A Discussion" by Louis Charles Moeller, Oil Painting, Private collection.</p>
+            </div>
+            <div class="stage-text">
+                <h3>Stage One: Review Service Terms & Submit Your Request & Approve the Sketch</h3>
+                <p>
+                    Before starting the commission process, we encourage you to carefully read our <strong><a href="#">service terms</a></strong>.
+                </p>
+                <p>
+                    Understanding the process in advance ensures smooth collaboration and helps avoid any uncertainties.
+                </p>
+
+                <details>
+                    <summary><h4>Submit Your Request</h4></summary>
+                    <p>Once you're ready to proceed, please provide the following details:</p>
+                    <ul>
+                        <li><strong>Artwork size</strong>– Dimensions in inches</li>
+                        <li><strong>Theme & specific content</strong>– Portraits, landscapes, still life, or custom themes</li>
+                        <li><strong>Any special details or personalization requests</strong>– Specific colors, elements, ideas or inspirations</li>
+                    </ul>
+                </details>
+                
+                <p>
+                    We will listen carefully to all your requests. The more details you provide, the more we can visualize and deeply understand your wishes, ensuring that the final artwork fully meets your expectations.
+                </p>
+                
+                <details>
+                    <summary><h4>Quotation & Idea Confirmation</h4></summary>
+                    <p>After reviewing your requirements, we will provide a <strong>preliminary quote</strong> based on the following factors:</p>
+                    <ul>
+                        <li><strong>Complexity of the artwork</strong></li>
+                        <li><strong>Materials & techniques used</strong></li>
+                        <li><strong>Estimated completion time</strong></li>
+                    </ul>
+                </details>
+
+                <p>If you agree with the quoted price, we will proceed with creating <strong>a concept sketch</strong>.</p>
+                
+                <h4>Sketch Approval & Deposit Payment</h4>
+                <p>A preliminary sketch will be sent to you for <strong>review & feedback</strong>. If necessary, minor revisions can be requested to refine the concept.</p>
+                <p>Once the sketch is approved, a <strong>50% deposit</strong> must be paid based on the agreed terms before the painting process officially begins.</p>
+            </div>
+        </section>
+    
+        <!--============================ Stage Two ============================-->
+        <section class="commission-stage reverse">
+            <div class="stage-image2">
+                <img src="png/artist-work.png" alt="Artists collaborating on commission">
+            </div>
+            <div class="stage-text2">
+                <h3>Stage Two: Creating Your Artwork</h3>
+                <p>Once the sketch is approved and the deposit is paid, we start creating your artwork, following the agreed design.</p>
+                <details>
+                    <summary><h4>Estimated Completion Time</h4></summary>
+                    <p>Depending on the complexity of the artwork, this process may take <strong>several weeks or months</strong>.</p>
+                </details>
+                <details>
+                    <summary><h4>Progress Updates & Feedback</h4></summary>
+                    <p>We will provide <strong>regular progress updates</strong>, so you can follow the development of your artwork.</p>
+                    <p>Minor adjustments can be suggested to ensure the final piece matches your expectations.</p>
+                    <p>Our goal is to ensure that each piece of art is beautiful and reflects your vision and emotions!</p>
+                </details>
+                <details>
+                    <summary><h4>Final Review & Completion</h4></summary>
+                    <p>Once the artwork is completed, we will send <strong>high-resolution images</strong> for your final approval.</p>
+                    <p>The remaining balance must be paid before shipping or pickup.</p>
+                    <p><strong>Important Note:</strong> At this step, no further revisions can be accepted.</p>
+                </details>
+
+            </div>
+        </section>
+    
+        <!--==================== Stage Three ==================-->
+        <section class="commission-stage">
+            <div class="stage-image">
+                <img src="jpg/display.jpg" alt="Finalized commissioned portrait">
+            </div>
+            <div class="stage-text">
+                <h3>Stage Three: Delivery & Finishing</h3>
+                <p>
+                    Your commissioned artwork is now complete! We take extra steps to ensure that you are 
+                    fully satisfied with the final piece before it reaches its new home.
+                </p>
+                <p>
+                    <strong>Final Review & Approval:</strong> Before shipping, we will send high-resolution images for your final approval.
+                    Please note that no further revisions will be accepted at this stage.
+                </p>
+                <p>
+                    <strong>Finishing Touches:</strong> We offer additional services, including 
+                    <em>professional framing, protective varnishing,</em> and <em>secure packaging</em> 
+                    to ensure the longevity and preservation of your artwork.
+                </p>
+                <p>
+                    <strong>Turnaround Time:</strong> If your artwork is an oil painting, 
+                    please allow approximately <strong>one month</strong> for the paint to dry completely before shipping.
+                </p>
+                <p>
+                    <strong>Packaging & Shipping:</strong> Your artwork will be carefully wrapped in 
+                    <em>shockproof and impact-resistant packaging</em> to guarantee safe transportation.
+                </p>
+                <p>
+                    <strong>Shipping Method:</strong> We use insured shipping services, and you will receive 
+                    a <strong>tracking number</strong> to monitor your shipment’s progress.
+                </p>
+                <p>
+                    <strong>Shipping Cost:</strong> Fees may vary based on location. A detailed quote will be provided before shipping.
+                </p>
+                <p>
+                    <strong>Certification & Documentation:</strong> If applicable, a 
+                    <strong>certificate of authenticity</strong> will be included with your artwork.
+                </p>
+                <p>
+                    <em>Thank you for trusting us with your custom artwork! We hope it brings you joy and inspiration for years to come.</em> 
+                </p>
+            </div>
+        </section>
+
+        <section class="commission-cta">
+            <div class="cta-container reverse-layout">
+                <div class="cta-image">
+                    <img src="jpg/brushes-draw-commission.jpeg" alt="Artist working on a custom commission">
+                    <p> https://www.collette.co.nz/blog/tips-for-artwork-commissions</p>
+                </div>
+                <div class="cta-text">
+                    <h2>Ready to Bring Your Vision to Life?</h2>
+                    <p>
+                        We’re excited to create something truly special for you. Whether you have a detailed idea or need guidance, 
+                        we're here to collaborate and turn your vision into a stunning piece of art.
+                    </p>
+                    <p>
+                        Get in touch today to discuss your custom commission and let’s start this creative journey together!
+                    </p>
+                    <a href="contact.html" class="cta-button">Start Your Commission</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100007357710557">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/chilenguyen0831/">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.tiktok.com/@chilenguyen5">
+                <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+            <a href="https://chilenguyen2.wixsite.com/my-site?fbclid=PAZXh0bgNhZW0CMTEAAaapTRlt8O0lI8rBZQ-M3RH804e8MQGZ7lelMfLbLwyzMWUNHY8xQ0o5p6g_aem_qCOtPxvBGQSWuM5cUAYrBg">
+                <ion-icon name="globe-outline"></ion-icon>
+            </a>
+            <a href="https://chilenguyen2.wixsite.com/my-site?fbclid=PAZXh0bgNhZW0CMTEAAaapTRlt8O0lI8rBZQ-M3RH804e8MQGZ7lelMfLbLwyzMWUNHY8xQ0o5p6g_aem_qCOtPxvBGQSWuM5cUAYrBg">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+
+            
+            <!-- More social media links here -->
+        </div>
+        <p>© CopyRights 2025 by Chile Studio. All rights reserved.</p>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+
+
+
+</body>
+</html>

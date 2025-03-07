@@ -1,0 +1,344 @@
+
+/*========================== Header Section ========================*/
+.commission-header {
+    background-color: #dbe6e6; /* Light pastel blue background */
+    padding: 60px 10%;
+}
+
+.process-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.process-title {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: #8e7862; /* Elegant brown/gold */
+    flex: 1; /* Allows the title to take its share of space */
+    line-height: 1.2;
+}
+
+.process-description {
+    flex: 1.5; /* Makes description take slightly more space */
+    font-size: 1.1em;
+    color: #4a6572; /* Soft dark gray for readability */
+    line-height: 1.6;
+}
+
+
+.commission-header h1 {
+    font-size: 2.5em;
+    color: #5a4a38;
+}
+
+.commission-header p {
+    max-width: 800px;
+    margin: 10px auto;
+    font-size: 1.1em;
+    color: #52676b;
+}
+
+/*======================== Commission Stage Sections=================================*/
+.commission-stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 10%;
+    gap: 40px;
+    background-color: white;
+}
+
+.commission-stage:nth-child(odd) {
+    background-color: #edf2f6; /* Alternating background */
+}
+
+/* Reverse Order for Alternating Layout */
+.commission-stage.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Text Styling */
+.stage-text {
+    flex: 1;
+    text-align: left;
+}
+.stage-text h2 {
+    font-size: 2.5em;
+    color: #5a4a38;
+}
+
+.stage-text h3 {
+    font-size: 2em;
+    color: #5a4a38;
+    margin-bottom: 10px;
+}
+
+
+.stage-text p {
+    font-size: 1em;
+    color: #52676b;
+    line-height: 1.6;
+}
+.stage-text a {
+    font-size: 1em;
+    color: #d66122;
+    line-height: 1.6;
+}
+
+.stage-text ul {
+    padding-left: 20px;
+}
+
+.stage-text ul li {
+    font-size: 1em;
+    color: #035067;
+    margin-bottom: 5px;
+}
+
+* Collapsible Section */
+details {
+    background: #e6ded1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+details summary {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #5a3210;
+    cursor: pointer;
+}
+/* Hide default triangle icon in details */
+details summary {
+    list-style: none; /* Remove default marker */
+}
+
+/* Additional fix for some browsers */
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Ensure all h4 elements, including inside <summary>, have the same size */
+h4,
+details summary h4 {
+    font-size: 1em;  /* Adjust to match your design */
+    font-weight: bold;
+    color: #8b4513;    /* Ensure consistent color */
+    margin-top: 10px;
+}
+h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #8b4513;    /* Ensure consistent color */
+    margin-top: 10px;
+
+}
+
+/* Optional: Remove margin for summary h4 to align properly */
+details summary h4 {
+    margin: 0;
+    display: inline; /* Prevents summary from breaking the layout */
+}
+
+
+/* Image Styling */
+.stage-image {
+    flex: 1;
+    text-align: center;
+}
+
+.stage-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+/* =========Stage 2 ======*/
+.reverse {
+    flex-direction: row-reverse; /* Swap order for image & text */
+}
+
+/* Text Styling */
+.stage-text2 {
+    flex: 1;
+    text-align: left;
+}
+
+.stage-text2 h3 {
+    font-size: 2em;
+    color: #5a4a38;
+    margin-bottom: 10px;
+}
+
+.stage-text2 p {
+    font-size: 1em;
+    color: #52676b;
+    line-height: 1.6;
+    max-width: 700px; /* Ensures good readability */
+}
+
+
+
+.stage-text2 a {
+    font-size: 1em;
+    color: #d66122;
+    line-height: 1.6;
+}
+
+
+.stage-image2 img{
+    width: auto;
+    max-width: 400px; /* Prevents image from being too wide */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    
+    
+}
+
+
+
+
+/* ======================== Commission CTA Section =================== */
+.commission-cta {
+    background-color: #f5f2ef; /* Soft neutral background */
+    padding: 80px 10%;
+    text-align: center;
+    
+}
+
+.cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+/* Reverse layout: Image on the right */
+.reverse-layout {
+    flex-direction: row-reverse;
+}
+
+.cta-text {
+    flex: 1;
+    text-align: left;
+}
+
+.cta-text h2 {
+    font-size: 2.5em;
+    color: #5a4a38;
+    margin-bottom: 20px;
+}
+
+.cta-text p {
+    font-size: 1.2em;
+    color: #4a6572;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #8e7862;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #6b5b4b;
+}
+
+.cta-image {
+    flex: 1;
+    text-align: center;
+}
+
+.cta-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/*=================== For Smaller Screens (Mobile)  =================*/
+@media screen and (max-width: 1117px) {
+    .process-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .process-title {
+        font-size: 2.4em;
+        margin-bottom: 20px;
+    }
+
+    .commission-stage {
+        flex-direction: column;
+        text-align: center;
+    }
+    .commission-stage.reverse {
+        flex-direction: column;
+    }
+
+   
+
+    .stage-text {
+        padding-right: 0;
+    }
+
+    .stage-image {
+        margin-top: 20px;
+    }
+
+    .stage-image2,
+    .stage-text2 {
+        flex: unset; /* Removes flex restrictions */
+        width: 100%; /* Full width for small screens */
+    }
+
+    .stage-image2 img {
+        max-width: 100%; /* Make the image full width */
+    }
+
+    .stage-text2 h3 {
+        font-size: 1.8em; /* Slightly smaller for readability */
+    }
+    
+    /* commission CTA */
+    .cta-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-text {
+        text-align: center;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    .cta-image img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+}

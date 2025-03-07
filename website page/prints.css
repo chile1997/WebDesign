@@ -1,0 +1,128 @@
+/*========================Invest Section =====================*/
+.invest-section {
+    background-color: #c9b090;
+    padding: 40px;
+    text-align: center;
+}
+
+.invest-section h2 {
+    font-size: 2.5em;
+    color: #5a4a38;
+}
+
+.invest-section p {
+    font-size: 1.2em;
+    color: #333;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.contact-text1 a {
+    color: #8b4513;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*======================  Prints Section =================*/
+
+.prints-section {
+    padding: 60px 10%;
+}
+
+.prints-title {
+    font-size: 2.5em;
+    color: #5a4a38;
+    margin-bottom: 30px;
+}
+
+.prints-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.prints-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.prints-item:hover {
+    transform: scale(1.05);
+}
+
+.prints-image {
+    position: relative;
+}
+
+.prints-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.quick-view {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.prints-item:hover .quick-view {
+    opacity: 1;
+}
+
+.prints-item h3 {
+    font-size: 1.4em;
+    color: #5a4a38;
+    margin-top: 10px;
+}
+
+.prints-item p {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+
+
+/*========= FAQ SECTION========== */
+
+.faq-container {
+    width: 70%;
+    margin: 50px auto;
+    background: #4D3627;
+    padding: 30px;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+    color: #F5E5D1;
+}
+.faq-item {
+    background: #F5E5D1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.faq-question {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-answer {
+    display: none;
+    padding-top: 10px;
+    color: #3E2A1C;
+}

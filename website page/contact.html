@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="description" content="Contact Chile Studio for custom artwork inquiries, commissions, or art consultations. We're here to bring your vision to life!">
+    <title>Chile Studio Contact Form Page</title>
+    <!--===============  Favicon link =============== -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!--===============  External Stylesheet =============== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+    <!--=============== Add Calistoga font ===============-->
+    <link href='https://fonts.googleapis.com/css?family=Calistoga' rel='stylesheet'>
+    <!--=============== Add Arbutus Slab font ===============-->
+    <link href='https://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet'>
+    <!--=============== Add ▼ to navigation bar ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!--=============== Script for Icons ==============-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<style>
+    input:focus-within {
+        outline: none;
+        border-color: #7b4325;
+        border-width: 3px;
+    }
+    textarea:focus-within {
+        outline: none;
+        border-color: #7b4325;
+        border-width: 3px;
+    }
+    button {
+        background-color: #7b4325;
+        border-radius: 20px;
+        border-color: black;
+        font-size: 22px;
+        padding: 10px 18px;
+        text-align: center;
+        display: flex;
+        margin: auto;
+    }
+    button:hover {
+        opacity: 80%;
+        cursor: pointer;
+    }
+</style>
+<body ontouchstart="">
+    <!--=============== HEADER  SECTION ===============-->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a href="index.html" class="logo-container">
+                    <img src="png/logo-main.png" alt="Chile Studio Logo">
+                </a>
+
+                <div class="ham-toggle" id="myhamtoggle">
+                    <i class="ri-menu-line ham-burger"></i>
+                    <i class="ri-close-line ham-close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav-menu" id="mynavmenu">
+                <ul class="nav-list">
+                    <li class="dropdown">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+
+                    <!--=============== SHOP DROPDOWN  ===============-->
+                    <li class="dropdown">
+                        <a href="shop.html" class="nav-link" ontouchend="toggleDropdown(this)">
+                            Shop <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="original_art.html" class="dropdown-link">
+                                    <i class="ri-gallery-fill"></i> Original Art
+                                </a>
+                            </li>
+                            <li>
+                                <a href="prints.html" class="dropdown-link">
+                                    <i class="ri-file-copy-line"></i> Prints
+                                </a>
+                            </li>
+                            <li>
+                                <a href="stickers.html" class="dropdown-link">
+                                    <i class="ri-emoji-sticker-line"></i> Stickers
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--=============== SERVICES DROPDOWN  ===============-->
+                    <li class="dropdown">
+                        <a href="services.html" class="nav-link" ontouchend="toggleDropdown(this)">
+                            Services <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="patreon.html" class="dropdown-link">
+                                    <i class="ri-patreon-line"></i> Patreon
+                                </a>
+                            </li>
+
+                            <!--=============== SERVICES DROPDOWN SUBMENU ===============-->
+                            <li class="dropdown-sub">
+                                <a href="commission.html" class="dropdown-link">
+                                    <i class="ri-task-line"></i> Commissions <i
+                                        class="ri-add-line dropdown-add"></i>
+                                </a>
+
+                                <ul class="dropdown-submenu">
+                                    <li>
+                                        <a href="policy.html" class="dropdown-sublink">
+                                            <i class="ri-file-list-line"></i> Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="sample_price.html" class="dropdown-sublink">
+                                            <i class="ri-cash-line"></i> Sample Price
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="progress.html" class="dropdown-sublink">
+                                            <i class="ri-progress-3-line"></i> Progress
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--=============== CONTACT DROPDOWN  ===============-->
+                    <li class="dropdown">
+                        <a href="contact.html" class="nav-link" ontouchend="toggleDropdown(this)">
+                            Contact <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="contact.html" class="dropdown-link">
+                                    <i class="ri-contacts-book-line"></i> Contact Form
+                                </a>
+                            </li>
+                            <li>
+                                <a href="social_media_links.html" class="dropdown-link">
+                                    <i class="ri-links-line"></i> Social Media Links
+                                </a>
+                            </li>
+                            <li>
+                                <a href="messages.html" class="dropdown-link">
+                                    <i class="ri-message-3-line"></i> Messages
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                   
+                </ul>
+                
+                <ul class = "nav-list">
+                         <li class="nav-actions">
+                        <a href="cart.html" class="cart-icon-wrapper">
+                            <ion-icon name="cart-outline" class="icon-cart"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="nav-actions">
+                        <a href="login.html" class="login-icon-wrapper">
+                            <ion-icon name="person-circle-outline" class="login-icon"></ion-icon>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--=============== MAIN JS ===============-->
+    <script src="new.js"></script>
+    <script src="navigation.js"></script>
+
+    <!--=============== MAIN ===============-->
+    <main class="main-content" style="background-color:#f2dcc2;">
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-tile">
+                    <hr>
+                </div>
+                <br>
+                <h1>Contact Form</h1>
+                <input type="hidden" name="access_key" value="3dd2e9d5-060b-4bdd-bebc-b0d97ae3637a">
+                <input type ="text" name="first" placeholder="First Name" class="contact-inputs" required>
+                <input type ="text" name="last" placeholder="Last Name" class="contact-inputs" required>
+                <input type ="email" name="email" placeholder="Email Adress" class="contact-inputs" required>
+                <textarea rows="5" cols="60" name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type ="submit">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <h2>Contact us</h2>
+                <p>Please fill out the form for your message here,</p>
+                <p>Chile Nguyen will try to reply to you within 24-48 hours.</p>
+                <p><strong>Email:</strong> <a href="mailto:Chilenguyen2@gmail.com">Chilenguyen2@gmail.com</a></p>
+                <p><strong>Phone:</strong> (636)-328-3535</p> 
+            </div>
+        </div>
+    
+    </main>
+
+     <!--=============== FOOTER SECTION ===============-->
+    <footer class="footer">
+        <!-- social link -->
+        <div class="social-links">
+            <!-- More social media links here -->
+            <a href="https://www.facebook.com/profile.php?id=100007357710557">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/chilenguyen0831/">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.tiktok.com/@chilenguyen5">
+                <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+            <a href="https://chilenguyen2.wixsite.com/my-site?fbclid=PAZXh0bgNhZW0CMTEAAaapTRlt8O0lI8rBZQ-M3RH804e8MQGZ7lelMfLbLwyzMWUNHY8xQ0o5p6g_aem_qCOtPxvBGQSWuM5cUAYrBg">
+                <ion-icon name="globe-outline"></ion-icon>
+            </a>
+            <a href="https://chilenguyen2.wixsite.com/my-site?fbclid=PAZXh0bgNhZW0CMTEAAaapTRlt8O0lI8rBZQ-M3RH804e8MQGZ7lelMfLbLwyzMWUNHY8xQ0o5p6g_aem_qCOtPxvBGQSWuM5cUAYrBg">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+
+            
+        </div>
+        <p>© CopyRights 2025 by Chile Studio. All rights reserved.</p>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+<script>
+    const form = document.getElementById('form');
+    const result = document.getElementById('result');
+    
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
+      result.innerHTML = "Please wait..."
+    
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = "Form submitted successfully";
+                } else {
+                    console.log(response);
+                    result.innerHTML = json.message;
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = "Something went wrong!";
+            })
+            .then(function() {
+                form.reset();
+                setTimeout(() => {
+                    result.style.display = "none";
+                }, 3000);
+            });
+    });
+    </script>
+    
+
+
+
+
+</body>
+</html>

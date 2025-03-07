@@ -1,0 +1,197 @@
+/*====================== Shop Collection Section =================*/
+/* Shop Section */
+.shop-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+/* Title */
+.shop-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.shop-description {
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+/* Container */
+.shop-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* Individual Item */
+.shop-item {
+    width: 200px;
+    text-align: center;
+}
+
+/* Main Image */
+.shop-images {
+    position: relative;
+}
+
+.main-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.shop-images:hover .main-image {
+    transform: scale(1.05);
+}
+
+/* Sub Images */
+.sub-images {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.sub-images img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect on Sub Images */
+.sub-images img:hover {
+    transform: scale(1.1);
+}
+
+/* Category Title */
+.shop-category {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Design Count */
+.shop-count {
+    font-size: 14px;
+    color: gray;
+}
+
+
+
+
+
+
+
+/*====================== Shop original Section =================*/
+.original-section {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 120px;
+}
+
+.original-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* Container to Hold Products */
+.original-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px; /* Ensures spacing under navbar */
+}
+
+/* Each Shop Item */
+.original-item {
+    text-align: center;
+   
+}
+
+/* Product Image Container */
+.original-image {
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+/* Product Image */
+.original-image img {
+    width: 100%;
+    display:inline-block;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Quick View Overlay */
+.quick-view {
+    position: relative;
+    margin-top: -35px;
+    bottom: 0;
+    left: 0;
+    width: 257px;
+    padding: 10px 5px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    color: #542d1b;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(10px);
+
+}
+
+/* Hover Effect */
+.original-image:hover .quick-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.original-image:hover img {
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Product Images */
+.original-item img {
+    width: 250px;
+    height: 350px;
+    border-radius: 5px; /* Rounded corners if needed */
+}
+
+/* Product Titles */
+.original-item h3 {
+    font-size: 18px;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+/* Product Prices */
+.original-item p {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    color: #93867f;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.original-section2 {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: -95px; 
+}

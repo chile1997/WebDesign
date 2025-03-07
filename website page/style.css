@@ -1,0 +1,673 @@
+/*=============== BASE =====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 4px 0 0;
+  scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+
+/* Global Styles */
+/* Sets the overall font, background, and text color */
+body {
+  /* uses Arbutus Slab font*/
+  font-family: "Arbutus Slab", serif;
+  background-color: #e0b389;
+  /* Adjust text color as needed */
+  color: #333333;
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 0px;
+}
+
+/* Links */
+/* Sets link color, removes underline, and sets hover color */
+ul {
+  list-style: none;
+  /* Color highlighting when pressed on mobile devices */
+  /*-webkit-tap-highlight-color: transparent;*/
+}
+
+a {
+  /*Removes underline from text*/
+  text-decoration: none;
+  /* Adjust link color as needed */
+  color: #333;
+}
+a:hover {
+  /* Adjust hover color as needed */
+  color: #542d1b; 
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+}
+
+
+/*=============== HEADER ===============*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #bd9066;
+  box-shadow: 0 2px 16px hsla(220, 32%, 8%, .3);
+  z-index: 1000;
+}
+
+/*=============== NAV ===============*/
+.nav {
+  height: 3.5rem;
+  padding: 0 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100vw;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  z-index:10000;
+}
+.nav-bar{
+  z-index: 9999;
+}
+
+
+
+ /* LOGO CONTAINER */
+ .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: fit-content;
+  position: relative;
+}
+
+/* LOGO IMAGE (Responsive) */
+.logo-container img {
+    height: 80px;
+    width: 20vw; /* Adjusts size dynamically based on screen width */
+    max-width: 250px; /* Prevents it from getting too large */
+    min-width: 120px; /* Ensures it doesn’t shrink too much */
+    max-height: 100px; /* Prevents it from getting too tall */
+    min-height: 90px; /* Prevents it from getting too small */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -5px; /* Adjusts vertical positioning */
+    transition: 0.4s;
+}
+
+/*  hambuger icon */
+.logo-container,
+.ham-burger,
+.ham-close {
+  color: #542d1b;
+}
+
+.container-fluid {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  font-weight: 600;
+  /* Color highlighting when pressed on mobile devices */
+  /*-webkit-tap-highlight-color: transparent;*/
+}
+
+.logo {
+  font-weight: bold;
+  height: 90px;
+  aspect-ratio: 1/1;
+}
+
+.logo-container img{
+  position: relative;
+  margin-right: -10px; /*Added some space*/
+  max-height: 70px;
+  top: 5px;
+  aspect-ratio: 1/1;
+  font-weight: initial;
+  font-size: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.ham-toggle {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.ham-burger,
+.ham-close {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  inset: 0;
+  margin: auto;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: opacity 0.1s, transform 0.4s;
+}
+
+.ham-close {
+  opacity: 0;
+}
+
+/* Common styles for both mobile and large screens */
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li a {
+  color: #333333;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 0.7rem 0.5rem;
+
+}
+
+/*Style for link to each icon*/
+.nav-link {
+  color: #333;
+  font-weight: 600;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+/*Style for the links hover when clicking*/
+/*  style for small screen */
+.nav-link:hover {
+  color: #542d1b;
+}
+
+/*=============== DROPDOWN ===============*/
+
+/*Style for the dropdown*/
+.dropdown {
+  cursor: pointer;
+  position: relative;
+  text-align:center;
+  /* Ensure dropdown menu is positioned relative to this */
+}
+
+/* Style for the arrow in the header */
+.dropdown-arrow {
+  font-size: 1.25rem;
+  font-weight: initial;
+  transition: transform 0.4s;
+}
+
+/* Style link, sublink to the link in sub and link menu */
+.dropdown-link,
+.dropdown-sublink {
+  padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+  color: #333;
+  background-color: #050705;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.dropdown-link i, 
+.dropdown-sublink i {
+  font-size: 1.25rem;
+  font-weight: initial;
+
+}
+
+/*Style link hover and sub link hover to the link in sub and link menu */
+.dropdown-link:hover,
+.dropdown-sublink:hover {
+  background-color: hsl(220, 24%, 12%);
+}
+
+.dropdown-link,
+.dropdown-sublink a {
+  background-color: hsl(35, 42%, 81%);
+}
+
+.dropdown-menu li a:hover {
+  background: hsl(35, 89%, 65%);
+}
+
+
+
+/* Hide dropdown menu by default */
+/* Show Drop Down And Sub Menu */
+.dropdown-menu,
+.dropdown-submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  position: absolute;
+  /* Change to absolute for correct positioning */
+  background: #4b2917;
+  /* Ensure background color is set */
+  box-shadow: 0 5px 15px rgba(14, 14, 27, 0.3);
+  border-radius: 0 0 5px 5px;
+  z-index: 10;
+
+}
+
+/*=============== DROPDOWN SUBMENU ===============*/
+
+.dropdown-submenu a{
+  background: hsl(35, 42%, 81%);
+  
+}
+
+.dropdown-submenu a:hover {
+  background: hsl(35, 89%, 65%);
+}
+
+/* Rotate dropdown icon */
+.dropdown:hover .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/*Style for the dropdown add  add */
+.dropdown-add {
+  margin-left: auto;
+  color: #65636169;
+}
+
+/*Sublink style */
+.dropdown-sublink {
+  background-color: #010101;
+}
+
+ /*  Make everything appear and adjust in position for mobile*/
+ .dropdown-menu,
+ .dropdown-submenu {
+      position:relative;
+      width: 100%;
+      opacity: 1;
+      pointer-events: auto;
+      display: block;  /*Start hide menu*/
+      }
+
+
+/*=============== BREAKPOINTS ===============*/
+
+/* ======================  For Large Screens (Desktop)  ======================== */
+@media screen and (min-width: 1118px) {
+  .container {
+    margin-inline: auto;
+  }
+  .show-menu {
+    position: static;
+  }
+  .nav {
+    height: calc(3.5rem + 2rem);
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav-menu::-webkit-scrollbar {
+    width: 0;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+
+.nav-menu {
+  width: auto;
+  height: auto;
+  position: static;
+  pointer-events: auto;
+  opacity: 1;
+  background-color: transparent;
+}
+
+/* Hide hamburger toggle for large screens */
+.ham-toggle {
+    display: none;
+}
+
+/*  Set horizontal navigation for large screens*/
+.nav-list {
+    display: flex;
+    justify-content: space-evenly; /* Ensures equal spacing */
+    flex-direction: row;
+    align-items: center;
+    column-gap: 3rem;
+    list-style: none;
+}
+
+.nav-list li {
+  flex-grow: 1; /* Distributes items evenly */
+  text-align: center; /* Ensures text is centered */
+  position: relative; /* Needed for dropdown positioning */
+
+}
+
+/* Links Style */
+.nav-list a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  display: inline-block;
+  letter-spacing: 0px; /* Ensures equal spacing between letters */
+}
+
+
+
+
+/* Added flex to the nav-list-action*/
+.nav-list-action {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 3rem;
+}
+
+.dropdown {
+ 
+  transform: translateX(-50%);
+  list-style: none;
+  padding: 10px 0;
+  min-width: 150px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.nav-link {
+    height: 100%;
+    padding: 0;
+    justify-content: initial;
+    column-gap: 0.25rem;
+}
+
+.nav-link:hover {
+    background-color: transparent;
+    color: #542d1b;
+}
+
+/*  Make the container flex box*/
+.dropdown-menu,
+.dropdown-submenu {
+    position: absolute;
+    left: 0;
+    top: 3.5rem;
+    /* Position below the nav-link */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s, top 0.3s;
+}
+
+/*  Align the dropdown with 2 rem padding for Desktop version (large)*/
+    .dropdown-link,
+    .dropdown-sublink {
+        padding-inline: 1rem 3.5rem;
+     }
+
+     /*  The item in sub link should be aligned better and smaller in Desktop version (large)*/
+    .dropdown-sub .dropdown-link {
+        padding-inline: 1rem;
+      }
+
+      /*  The position for submenu should be positioned side by side*/
+    .dropdown-submenu {
+        position: absolute;
+        left: 100%;
+        top: 0.5rem;
+        background: #bd9066;
+        /* Ensure same background color */
+    }
+
+/* SHOW dropdown on HOVER (desktop)  */
+.dropdown:hover > .dropdown-menu,
+.dropdown-sub:hover > .dropdown-submenu {
+    opacity: 1;
+    top: 3.5rem;
+    /* Adjust as needed */
+    pointer-events: initial;
+      display: block;
+       /* Ensure it's visible */
+       max-height: 500px;
+      transition: max-height 0.4s ease-in;
+  }
+
+   /*  Here is the new CSS that needs to be updated to create Sub menus action over large screens*/
+  .dropdown-submenu {
+         left: 100%;
+         top: 0.5rem;
+         background: #bd9066;
+         pointer-events: none;
+         transition: opacity .3s, top 0.3s;
+     }
+
+     
+  /*  make sure submenu appears after dropdown on the larger screen*/
+  .dropdown-sub:hover > .dropdown-submenu {
+        opacity: 1;
+        top: 0;
+        pointer-events: initial;
+        transition: top 0.3s;
+        background: #15131169;
+    }
+    /*  Make everything appear and adjust in position for mobile*/
+
+    .dropdown-menu,
+  .dropdown-submenu {
+       position: static;
+       width: 100%;
+       }
+}
+
+
+
+
+
+
+/*=================== For Smaller Screens (Mobile)  =================*/
+@media screen and (max-width: 1117px) {
+  
+  .container-fluid {
+    justify-content: center;
+  }
+
+  .ham-toggle{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    height: 40px;
+    float: left;
+    background-color: rgba(79, 55, 38, 0.684);
+  }
+
+
+  .nav-menu {
+    position: absolute;
+    left: 0;
+    top: 7.5rem;
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    overflow: auto;
+    pointer-events: none;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.4s;
+  }
+
+   /*Style for the menu show*/
+  .show-menu {
+      pointer-events: initial;
+      opacity: 1;
+      top: 3.5rem;
+  }
+  
+  /* Show icon */
+  .show-icon .ham-burger {
+    opacity: 0;
+    transform: rotate(90deg);
+  }
+  .show-icon .ham-close {
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+
+  
+  /* Style for the menu in mobile*/
+  .nav-list {
+      flex-direction: column;
+      align-items: flex-start;
+      background: hsl(35, 42%, 81%);
+  }
+
+  
+
+  .dropdown-link,
+.dropdown-sublink {
+  text-align:center;
+}
+
+  .dropdown-link,
+.dropdown-sublink a {
+  background-color: hsl(35, 42%, 81%);
+}
+ 
+
+.dropdown {
+    flex-direction: column;
+    align-items: flex-start;
+    background: hsl(35, 42%, 81%);
+}
+
+.dropdown a{
+  color: white;
+}
+
+.dropdown a:hover{
+  display: block;
+          max-height: 500px;
+          background: hsl(35, 89%, 65%);
+          color: rgb(70, 40, 36);
+}
+.dropdown-menu {
+  background: transparent;
+
+}
+
+  /* Drop down should be visible */
+  /*Code test on a smaller  window size */
+  .dropdown:hover > .dropdown-menu,
+  .dropdown-sub:hover > .dropdown-submenu{
+          display: block;
+          max-height: 500px;
+          background: hsl(35, 42%, 81%);
+
+}
+
+  /*For the dropdown link for link in mobile and smaller size window  
+  .dropdown-link {
+         padding: 1.25rem 1.25rem 1.25rem 2.5rem;
+          color: #333;
+          font-weight: 600;
+          transition: background-color .3s;
+       }
+
+      /* The color for for the dropdown and smaller window sizes and screen*/
+       .dropdown-link:hover, 
+       .dropdown-sublink:hover {
+           background-color: #333;
+         }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

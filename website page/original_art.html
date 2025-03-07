@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Browse Chile Studio's exclusive collection of original fine art paintings. Each piece is crafted with passion and creativity!"> 
+    <title>Chile Studio Original Art Page</title>
+    <!--===============  Favicon link =============== -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!--===============  External Stylesheet =============== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="original_art.css">
+    <link rel="stylesheet" href="footer.css">
+    <!--=============== Add Calistoga font ===============-->
+    <link href='https://fonts.googleapis.com/css?family=Calistoga' rel='stylesheet'>
+    <!--=============== Add Arbutus Slab font ===============-->
+    <link href='https://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet'>
+    <!--=============== Add ▼ to navigation bar ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!--=============== Script for Icons ==============-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body ontouchstart="">
+    <!--=============== HEADER  SECTION ===============-->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a href="index.html" class="logo-container">
+                    <img src="png/logo-main.png" alt="Chile Studio Logo">
+                </a>
+
+                <div class="ham-toggle" id="myhamtoggle">
+                    <i class="ri-menu-line ham-burger"></i>
+                    <i class="ri-close-line ham-close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav-menu" id="mynavmenu">
+                <ul class="nav-list">
+                    <li class="dropdown">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+
+                    <!--=============== SHOP DROPDOWN  ===============-->
+                    <li class="dropdown">
+                        <a href="shop.html" class="nav-link" ontouchend="toggleDropdown(this)">
+                            Shop <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="original_art.html" class="dropdown-link">
+                                    <i class="ri-gallery-fill"></i> Original Art
+                                </a>
+                            </li>
+                            <li>
+                                <a href="prints.html" class="dropdown-link">
+                                    <i class="ri-file-copy-line"></i> Prints
+                                </a>
+                            </li>
+                            <li>
+                                <a href="stickers.html" class="dropdown-link">
+                                    <i class="ri-emoji-sticker-line"></i> Stickers
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--=============== SERVICES DROPDOWN  ===============-->
+                    <li class="dropdown">
+                        <a href="#" class="nav-link" ontouchend="toggleDropdown(this)">
+                            Services <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="patreon.html" class="dropdown-link">
+                                    <i class="ri-patreon-line"></i> Patreon
+                                </a>
+                            </li>
+
+                            <!--=============== SERVICES DROPDOWN SUBMENU ===============-->
+                            <li class="dropdown-sub">
+                                <a href="commission.html" class="dropdown-link">
+                                    <i class="ri-task-line"></i> Commissions <i
+                                        class="ri-add-line dropdown-add"></i>
+                                </a>
+
+                                <ul class="dropdown-submenu">
+                                    <li>
+                                        <a href="#" class="dropdown-sublink">
+                                            <i class="ri-file-list-line"></i> Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-sublink">
+                                            <i class="ri-cash-line"></i> Sample Price
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-sublink">
+                                            <i class="ri-progress-3-line"></i> Progress
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--=============== CONTACT DROPDOWN  ===============-->
+                    <li class="dropdown">
+                        <a href="contact.html" class="nav-link" ontouchend="toggleDropdown(this)">
+                            Contact <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="contact.html" class="dropdown-link">
+                                    <i class="ri-contacts-book-line"></i> Contact Form
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-link">
+                                    <i class="ri-links-line"></i> Social Media Links
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-link">
+                                    <i class="ri-message-3-line"></i> Messages
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                   
+                </ul>
+                <!--==================== login and cart ================ -->
+                <ul class = "nav-list">
+                         <li class="nav-actions">
+                        <a href="#" class="cart-icon-wrapper">
+                            <ion-icon name="cart-outline" class="icon-cart"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="nav-actions">
+                        <a href="login.html" class="login-icon-wrapper">
+                            <ion-icon name="person-circle-outline" class="login-icon"></ion-icon>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--=============== MAIN JS ===============-->
+    <script src="new.js"></script>
+    <script src="navigation.js"></script>
+    <!--=============== MAIN ===============-->
+    <main class="main-content" style="background-color:#f2dcc2;" >
+        <section>
+            <div class="mid-info">
+            </div>
+        </section>
+        
+
+        <!--================ Invest Section =============-->
+        <section class="invest-section">
+            <h2>Invest in My Work</h2>
+            <p>
+                I paint in a suggestive way, to create the impression of my subject striving to engage with the viewer.
+                I encourage the eye to wander around the painting’s surface - being drawn by the atmosphere and light, to focus on a twist on what appears normal.
+            </p>
+            
+            <p>
+                The image is accurate to the original, so I am confident that it will give you many years of pleasure if you choose to add it to your collection.
+            </p>
+            
+            <p>
+                This is an original, it will not be copied. You are investing in a unique piece of work.
+            </p>
+
+            <p class="contact-text1">
+                Thank you for taking the time to view my work. Please feel free to
+                <a href="contact.html" class="help"><b>Contact me</b></a> if you have any questions.
+            </p>
+            
+        </section>
+
+        <!--================ Original Section 1====== ================ -->
+        <section class="original-section">
+            <h2 class="original-title">Original Work</h2>
+            <div class="original-container">
+                <div class="original-item">
+                    <div class="original-image">
+                        <img src="jpg/Fragile.jpg" alt="The Fragile">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <h3>Fragile</h3>
+                    <p>$400.00</p>
+                </div>
+        
+                <div class="original-item">
+                    <div class="original-image">
+                        <img src="jpg/Goddess of Marriage.jpg" alt="The Goddess of Marriage">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <h3>Goddess of Marriage</h3>
+                    <p>$250.00</p>
+                </div>
+        
+                <div class="original-item">
+                    <div class="original-image">
+                        <img src="jpg/Goddess of Night.jpg" alt="Nyx Goddess of Night">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <h3>Goddess of Night</h3>
+                    <p>$200.00</p>
+                </div>
+        
+                <div class="original-item">
+                    <div class="original-image">
+                        <img src="jpg/Hera with peacock.jpg" alt="Hera with peacock">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <h3>Hera with peacock</h3>
+                    <p>$200.00</p>
+                </div>
+            </div>
+        </section>
+        <!--====================== Original Section 2============================  -->
+        <section class="original-section2">
+            <div class="original-container">
+                <div class="original-item">
+                    <div class="original-image">
+                        <img src="jpg/Yukata color.jpg" alt="Yukata">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <h3>Yukata</h3>
+                    <p>$500.00</p>
+                </div>
+        
+                <div class="original-item">
+                    <div class="original-image">
+                        <img src="jpg/Purification.jpg" alt="Purification">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <h3>Purification</h3>
+                    <p>$500.00</p>
+                </div>
+        
+                <div class="original-item">
+                    <div class="original-image">
+                        <img src="jpg/Mermaid (Japan) Color.jpg" alt="Mermaid (Japan)">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <h3>Mermaid (Japan)</h3>
+                    <p>$800.00</p>
+                </div>
+        
+                <div class="original-item">
+                    <div class="original-image">
+                        <img src="jpg/Mermaid (New Zerland) Color.jpg" alt="Mermaid (New Zerland)">
+                        <div class="quick-view">Quick View</div>
+                    </div>
+                    <h3>Mermaid (New Zerland)</h3>
+                    <p>$800.00</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!--================ FOOTER SECTION ======================-->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100007357710557">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/chilenguyen0831/">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.tiktok.com/@chilenguyen5">
+                <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+            <a href="https://chilenguyen2.wixsite.com/my-site?fbclid=PAZXh0bgNhZW0CMTEAAaapTRlt8O0lI8rBZQ-M3RH804e8MQGZ7lelMfLbLwyzMWUNHY8xQ0o5p6g_aem_qCOtPxvBGQSWuM5cUAYrBg">
+                <ion-icon name="globe-outline"></ion-icon>
+            </a>
+            <a href="https://chilenguyen2.wixsite.com/my-site?fbclid=PAZXh0bgNhZW0CMTEAAaapTRlt8O0lI8rBZQ-M3RH804e8MQGZ7lelMfLbLwyzMWUNHY8xQ0o5p6g_aem_qCOtPxvBGQSWuM5cUAYrBg">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+        </div>
+        <p>© CopyRights 2025 by Chile Studio. All rights reserved.</p>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+
+
+
+</body>
+</html>

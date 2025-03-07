@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Discover unique handmade art, fine art commissions, and high-quality art prints at Chile Studio. Own a masterpiece that inspires you!"> 
+    <title>Chile Studio Home Page</title>
+    <!--===============  Favicon link =============== -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <!--===============  External Stylesheet =============== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
+    <!--=============== Add Calistoga font ===============-->
+    <link href='https://fonts.googleapis.com/css?family=Calistoga' rel='stylesheet'>
+    <!--=============== Add Arbutus Slab font ===============-->
+    <link href='https://fonts.googleapis.com/css?family=Arbutus+Slab' rel='stylesheet'>
+    <!--=============== Add ▼ to navigation bar ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+
+<style>
+h1 {
+    text-align: center;
+}
+.row {
+    display: flex;
+}
+.column {
+    float: left;
+}
+
+</style>
+
+<body ontouchstart="">
+    <!--=============== HEADER  SECTION ===============-->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a href="index.html" class="logo-container">
+                    <img src="png/logo-main.png" alt="Chile Studio Logo">
+                </a>
+
+                <div class="ham-toggle" id="myhamtoggle">
+                    <i class="ri-menu-line ham-burger"></i>
+                    <i class="ri-close-line ham-close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav-menu" id="mynavmenu">
+                <ul class="nav-list">
+                    <li class="dropdown">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+
+                    <!--=============== SHOP DROPDOWN  ===============-->
+                    <li class="dropdown">
+                        <a href="shop.html" class="nav-link" ontouchend="toggleDropdown(this)">
+                            Shop <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="original_art.html" class="dropdown-link">
+                                    <i class="ri-gallery-fill"></i> Original Art
+                                </a>
+                            </li>
+                            <li>
+                                <a href="prints.html" class="dropdown-link">
+                                    <i class="ri-file-copy-line"></i> Prints
+                                </a>
+                            </li>
+                            <li>
+                                <a href="stickers.html" class="dropdown-link">
+                                    <i class="ri-emoji-sticker-line"></i> Stickers
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--=============== SERVICES DROPDOWN  ===============-->
+                    <li class="dropdown">
+                        <a href="services.html" class="nav-link" ontouchend="toggleDropdown(this)">
+                            Services <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="patreon.html" class="dropdown-link">
+                                    <i class="ri-patreon-line"></i> Patreon
+                                </a>
+                            </li>
+
+                            <!--=============== SERVICES DROPDOWN SUBMENU ===============-->
+                            <li class="dropdown-sub">
+                                <a href="commission.html" class="dropdown-link">
+                                    <i class="ri-task-line"></i> Commissions <i
+                                        class="ri-add-line dropdown-add"></i>
+                                </a>
+
+                                <ul class="dropdown-submenu">
+                                    <li>
+                                        <a href="#" class="dropdown-sublink">
+                                            <i class="ri-file-list-line"></i> Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-sublink">
+                                            <i class="ri-cash-line"></i> Sample Price
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-sublink">
+                                            <i class="ri-progress-3-line"></i> Progress
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--=============== CONTACT DROPDOWN  ===============-->
+                    <li class="dropdown">
+                        <a href="contact.html" class="nav-link" ontouchend="toggleDropdown(this)">
+                            Contact <i class="ri-arrow-down-s-line dropdown-arrow"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="contact.html" class="dropdown-link">
+                                    <i class="ri-contacts-book-line"></i> Contact Form
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-link">
+                                    <i class="ri-links-line"></i> Social Media Links
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-link">
+                                    <i class="ri-message-3-line"></i> Messages
+                                </a>
+                            </li>
+                        </ul>
+                    </li>             
+                </ul>
+                <!--======= login and cart ========-->
+                <ul class = "nav-list">
+                         <li class="nav-actions">
+                        <a href="#" class="cart-icon-wrapper">
+                            <ion-icon name="cart-outline" class="icon-cart"></ion-icon>
+                        </a>
+                    </li>
+
+                    <li class="nav-actions">
+                        <a href="login.html" class="login-icon-wrapper">
+                            <ion-icon name="person-circle-outline" class="login-icon"></ion-icon>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="new.js"></script>
+    <script src="navigation.js"></script>
+    <!--=============== MAIN ===============-->
+    <main class="main-content" style="background-color:#f2dcc2;" >
+        
+      <section class="banner">
+            <img src="jpg/Art Studio Banner.jpg" alt="Art Studio Banner" class="banner-image">
+        </section>
+
+        <!--=============== About ===============-->
+        <section class="about-section">
+            <div class="about-content">
+                <p>
+                    Chile Studio, found in February 2025 by Chile Nguyen, is a premier studio specializing fine art. 
+                    As an artist focused on fine arts based in Missouri, Chile provides high-quality and original artwork to exhibitions and art connoisseurs who appreciate her unique artistic flair. 
+                    While most of her work serves the professional world, she also pursues her projects. 
+                    Chile explores her creativity through her art to express her perspectives on societal issues inspired by mythology, folklore, and natural landscapes.
+                </p>
+                <a href="about.html" class="about-button">About</a>
+            </div>
+        </section>
+        
+        <!--=============== New Coming Arrival ===============-->
+        <div class="horizontal-line"></div>
+            <section class="featured-products container">
+                <!-- New Product Section -->
+                 <div class="new-product">
+                    <h3>New Coming Art Product</h3>
+                    <div class="product-container">
+                        <img src="jpg/Fragile.jpg" alt="New Product 1" class="product-image">
+                        <div class="product-text">
+                            <p>New exclusive print now available in the shop!</p>
+                            <a href="original_art.html" class="product-button">Shop Now</a>
+                        </div>
+                    </div>
+                    
+                    <div class="product-container">
+                        <img src="jpg/sticker.jpg" alt="New Product 2" class="product-image">
+                        <div class="product-text">
+                            <p>New sticker now available in the shop!</p>
+                            <a href="#" class="product-button">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- New Journal Section -->
+                 <div class="new-commission-journal">
+                    <h3>New Journal</h3>
+                    <div class="commission-journal-container">
+                        <img src="png/commission.png" alt="Commission Journal" class="journal-commission-image">
+                        <div class="commission-journal-text">
+                            <p>Explore our insightful journal, where we delve into the creative process, share stories, and provide a behind-the-scenes look at our world of art.</p>
+                            <a href="#" class="commission-journal-button">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--=============== Latest Journal Entries Section ===============-->
+            <section class="journal-section">
+                <h1 class="journal-title">Latest Journal Entries</h1>
+        
+                <!-- Journal Content Box -->
+                <div class="journal-box">
+                    <div class="journal-entry">
+                        <img src="jpg/Royal Cup.jpg" alt="Magic The Gathering Card">
+                        <div class="journal-text">
+                            <h2>My First Monoprints Journal</h2>
+                            <p>
+                                I had fun experimenting with a new monoprint technique using Speedball screens. 
+                                I created several mini prints with various materials.
+                            </p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+        
+                    <div class="journal-entry">
+                        <img src="jpg/Fragile.jpg" alt="Artwork collection">
+                        <div class="journal-text">
+                            <h2>Mythology Collection</h2>
+                            <p>
+                                I'm absolutely thrilled to share that my captivating new mythology arts collection is now available on Chile Studio! 
+                                Don't miss the chance to explore these unique pieces that bring ancient stories to life.                            
+                            </p>
+                            <a href="#" class="read-more">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== Community ===============-->
+            <section class="community">
+                <h3>Join Our Creative Community</h3>
+                <p>Be part of our community of art enthusiasts. Be the first to know about our new collection
+                    launches, special offers & other updates.</p>
+                 <button class="community-button">Join</button>
+                <div class="login-section">
+                   <input type="text" placeholder="Username" class="login-input">
+                   <input type="password" placeholder="Password" class="login-input">
+                   <button class="login-button">Login</button>
+                </div>
+            </section>
+        
+    </main>
+
+    <!--=============== Footer ===============-->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100007357710557">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/chilenguyen0831/">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.tiktok.com/@chilenguyen5">
+                <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+            <a href="https://chilenguyen2.wixsite.com/my-site?fbclid=PAZXh0bgNhZW0CMTEAAaapTRlt8O0lI8rBZQ-M3RH804e8MQGZ7lelMfLbLwyzMWUNHY8xQ0o5p6g_aem_qCOtPxvBGQSWuM5cUAYrBg">
+                <ion-icon name="globe-outline"></ion-icon>
+            </a>
+            <a href="https://chilenguyen2.wixsite.com/my-site?fbclid=PAZXh0bgNhZW0CMTEAAaapTRlt8O0lI8rBZQ-M3RH804e8MQGZ7lelMfLbLwyzMWUNHY8xQ0o5p6g_aem_qCOtPxvBGQSWuM5cUAYrBg">
+                <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+
+            
+        </div>
+        <p>© CopyRights 2025 by Chile Studio. All rights reserved.</p>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"></script>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+
+
+
+</body>
+</html>

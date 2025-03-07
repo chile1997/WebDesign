@@ -1,0 +1,43 @@
+.footer {
+    /*Sets the background color */
+    background-color: #222;
+    /*Sets font color*/
+    color: white;
+    /*Centers text in the footer */
+    text-align: center;
+    *Sets padding */
+    padding: 1.5em;
+}
+/*Social link section styling*/
+.social-links {
+    /*Sets margin bottom */
+    margin-bottom: 1em;
+    font-size: 1.25rem;
+    display: flex;
+    gap: 0.75rem;
+}
+.social-links:hover {
+    opacity: 0.7;
+}
+/*Social links styling*/
+.social-links a {
+    /*Sets color of the text*/
+    color: white;
+    /*Sets the margin*/
+    margin: 0 1em;
+}
+/* Social link hover styling */
+.social-links a:hover {
+    /*Underlines the text when mouse hover */
+    text-decoration: underline;
+}
+.social-links >* {
+    transform: all 0.3s;
+    color: white;
+}
+
+@media (max-width: 613px) {
+    .social-links {
+        margin: 0 auto;
+    }
+}
